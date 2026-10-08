@@ -1,69 +1,105 @@
 
-1. Justificación del Diseño:
+Documentación de la interfaz — Trotitos
 
-• Importancia del Diseño Centrado en el Usuario:
+1. Justificación del diseño
 
-    El diseño centrado en el usuario es importante para crear una tienda online de ropa para niños que sea sencilla, clara y cómoda de utilizar. Los usuarios deben poder encontrar fácilmente las prendas que buscan, consultar sus características y realizar una compra sin encontrarse con procesos complicados.
+## 1.1 Importancia del diseño centrado en el usuario
 
-    En este caso, la aplicación estará principalmente dirigida a padres, madres y familiares que buscan ropa para niños pequeños. Por ello, la interfaz debe permitir consultar los productos rápidamente, mostrando información importante como el precio, la talla, el color y las imágenes de cada prenda.
+    Trotitos vende ropa y calzado de 0 a 14 años. Quien compra casi nunca es quien usa la prenda: son madres, padres, abuelos y personas que hacen un regalo, con poco tiempo, una sola mano libre (la otra sujeta al niño o la bolsa) y mucha inseguridad con las tallas. Una devolución por talla errónea cuesta dinero al negocio y confianza al cliente. Diseñar partiendo de cómo compran estas personas, y no de cómo es el catálogo interno de la tienda, reduce errores, abandonos y devoluciones. Por eso la app se apoya en Material Design 3 (patrones conocidos por cualquier usuario de Android) y en pruebas con usuarios reales.
 
-    También será importante utilizar una navegación sencilla y elementos visuales claros, de manera que el usuario pueda acceder fácilmente a las diferentes categorías de ropa y realizar sus compras desde un dispositivo móvil.
+## 1.2 Objetivos y metas del proyecto
 
-• Objetivos y Metas del Proyecto:
+    -Rapidez: que un usuario complete una compra (Inicio → Confirmación) en menos de 2 minutos.
 
-    -Los principales objetivos del diseño son:
+    -Seguridad en la talla: que al menos el 80 % de los participantes en las pruebas encuentre y use la guía de tallas sin ayuda.
 
-        Crear una interfaz sencilla, moderna y atractiva, facilitar la búsqueda de ropa para niños pequeños, organizar los productos en diferentes categorías, mostrar de forma clara el precio, talla, color y características de cada producto, facilitar el proceso de añadir productos al carrito, crear un proceso de compra sencillo e intuitivo, diseñar una interfaz adaptada a dispositivos móviles, mantener una imagen visual coherente con una tienda de ropa infantil.
+    -Usabilidad: que el 100 % de las tareas de prueba se completen con un máximo de 1 error por tarea.
 
-    La meta principal es crear una experiencia de compra rápida y sencilla, permitiendo que los usuarios puedan encontrar y comprar ropa sin complicaciones.
+    -Accesibilidad: que todas las parejas color/on-color cumplan un contraste mínimo de 4,5:1 (WCAG AA) y que todas las áreas táctiles midan al menos 48×48 dp.
 
-• Beneficios Esperados:
+## 1.3 Beneficios esperados
 
-    El diseño aportará beneficios tanto a los usuarios como a la propia tienda.
+    -Para el usuario: compra más rápida con una mano, menos dudas con la talla, mensajes de error claros y posibilidad de deshacer acciones (eliminar del carrito).
 
-    -Beneficios para los usuarios:
-
-        Encontrar ropa de forma rápida, consultar fácilmente las características de cada producto, navegar cómodamente entre las diferentes categorías, comparar diferentes prendas, realizar compras de manera sencilla y disponer de una interfaz visualmente atractiva y fácil de entender.
-
-    -Beneficios para la tienda:
-
-        Mejorar la experiencia de compra, facilitar que los usuarios encuentren los productos que buscan, presentar los productos de una forma más atractiva, aumentar la facilidad de navegación por el catálogo y conseguir una imagen moderna y profesional para la tienda.
+    -Para el negocio: menos devoluciones por talla, menos abandono de carrito, un canal propio de venta en Android y una imagen de marca coherente y moderna.
 
 
-2. Investigación y Análisis de Usuarios:
+2. Investigación y análisis de usuarios
 
-• Datos Demográficos y Segmentación:
+## 2.1 Datos demográficos y segmentación
 
-    El público principal de la aplicación estará formado por adultos de 20 a 50 años (padres, madres y familiares de niños pequeños) que buscan comprar ropa infantil a través de Internet.
+    -Público principal (compra): adultos de 25 a 70 años que compran para niños de 0 a 14 años. Segmentos:
 
-    Aunque la ropa está destinada a niños pequeños, los usuarios que utilizarán la aplicación para realizar las compras serán principalmente adultos.
+    -Padres y madres con compra recurrente (25-45 años): compran a menudo, valoran rapidez y repetir compras.
 
-    La aplicación deberá estar diseñada para que pueda ser utilizada por personas con diferentes niveles de experiencia tecnológica.
+    -Abuelos y familiares (55-75 años): compran de forma puntual, menor soltura digital, necesitan claridad y letra legible.
 
+    -Compradores de regalo (20-60 años): no conocen la talla del niño; necesitan orientación por edad.
 
-• Necesidades y Comportamientos:
+    -Contexto de uso: móvil Android, de pie o en movimiento, con una mano, en ratos cortos.
 
-    Los usuarios que compran ropa infantil por Internet suelen necesitar consultar rápidamente diferentes productos antes de tomar una decisión.
+## 2.2 Personas
 
-    -Entre las principales necesidades se encuentran:
-
-        Poder visualizar correctamente las prendas mediante fotografías, conocer el precio de cada producto, seleccionar fácilmente la talla, consultar los colores disponibles, conocer las características de la prenda, poder filtrar los productos por categorías, encontrar rápidamente determinadas prendas, añadir productos al carrito de forma sencilla, consultar el contenido del carrito antes de realizar la compra y realizar el proceso de compra de manera clara y rápida.
-
-• Insights y Hallazgos Clave:
-
-    -A partir del análisis del público objetivo se han establecido varios aspectos importantes que influirán en el diseño:
-
-        Las imágenes son muy importantes: al tratarse de una tienda de ropa, las fotografías de las prendas deberán tener un papel destacado en la interfaz.
-
-        Las categorías deben estar claramente organizadas: se podrán crear categorías como camisetas, pantalones, vestidos, sudaderas, abrigos o conjuntos.
-
-        La información del producto debe ser fácilmente visible: el precio, las tallas disponibles y los colores deberán aparecer de forma clara.
-
-        La búsqueda debe ser sencilla: se incorporará un sistema de búsqueda y, si es necesario, filtros para facilitar la localización de productos.
-
-        El carrito debe ser fácilmente accesible: el usuario deberá poder comprobar en cualquier momento los productos que ha seleccionado.
-
-        La interfaz debe ser visualmente agradable: al tratarse de una tienda infantil, se puede utilizar un diseño moderno y atractivo, manteniendo una apariencia profesional y evitando sobrecargar la pantalla.
-
-    El proceso de compra debe ser sencillo: se intentará reducir el número de pasos necesarios para completar una compra.
+    -Persona 1: 
     
+    Laura Gómez, 34 años, madre que compra a diario
+
+    Contexto: vive en Sevilla, trabaja a jornada completa y tiene dos hijos (2 y 7 años). Compra desde el móvil en el autobús o mientras prepara la cena.
+
+    Objetivos: renovar ropa cuando los niños crecen, repetir tallas ya conocidas, comprar en pocos pasos.
+
+    Frustraciones: formularios largos, perder el carrito, tallas que cambian de una marca a otra, no poder pulsar botones pequeños con una mano.
+
+
+    -Persona 2: 
+    
+    Manuel Ortega, 68 años, abuelo que compra un regalo
+
+    Contexto: jubilado, usa el móvil para WhatsApp y poco más. Quiere regalar un pijama a su nieta, que cumple 4 años; no está seguro de su talla.
+    
+    Objetivos: encontrar un regalo adecuado a la edad, saber qué talla pedir y terminar la compra sin equivocarse.
+
+    Frustraciones: letra pequeña, iconos sin texto, no saber si ha pulsado bien, miedo a comprar mal y no saber devolver.
+
+## 2.3 Análisis de la competencia
+
+
+| App | Qué hace bien | Qué hace mal | Qué me llevo |
+|---|---|---|---|
+| Zara | Imágenes grandes y limpias; navegación por categorías clara | Catálogo muy extenso; la elección de talla no ayuda a decidir | Priorizar fotos grandes y una navegación simple |
+| H&M | Filtros por talla y color; lista de favoritos | Muchos filtros y pantallas cargadas | Filter chips visibles, pero pocos y bien jerarquizados |
+| Kiabi | Sección específica de niños y bebés; precios visibles | Interfaz algo saturada de promociones | Categorías por edad como acceso principal |
+
+## 2.4 Insights y hallazgos clave
+
+
+| # | Insight | Decisión de diseño |
+|---|---|---|
+| 1 | Los compradores dudan con las tallas. | Botón «Guía de tallas» en el detalle que abre un bottom sheet con equivalencias por edad y altura. |
+| 2 | Se compra con una mano y poco tiempo. | Navigation bar inferior, botones principales abajo y áreas táctiles de 48 dp o más. |
+| 3 | Los regalos se piensan por edad, no por talla. | Inicio con categorías por edad (Bebé 0-24 m, Niña, Niño) y chips de edad/talla en el catálogo. |
+| 4 | Los errores en formularios provocan abandono. | Text fields M3 con mensaje de ayuda y estado de error explícito en el checkout. |
+| 5 | Eliminar por error en el carrito genera miedo a comprar. | Snackbar con acción «Deshacer» al eliminar. |
+    
+
+3. Diseño de la interfaz
+
+    ### 3.1 Mapa de navegación
+
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Catálogo]
+    B --> D[Detalle de producto]
+    D --> G[Guía de tallas<br/>bottom sheet]
+    G --> D
+    D --> C[Carrito]
+    C --> E[Checkout]
+    E --> H[Confirmación]
+    H --> A
+
+    A --- NAV{{Navigation bar}}
+    NAV --- A
+    NAV --- C
+    NAV --- F[Favoritos / Perfil]
+    F --> A
+```
