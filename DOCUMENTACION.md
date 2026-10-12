@@ -103,3 +103,23 @@ flowchart TD
     NAV --- F[Favoritos / Perfil]
     F --> A
 ```
+
+### 3.2 Wireframes
+
+![alt text](image.png)
+
+
+### 3.3 Guía de estilo Material Design 3
+
+**Contraste de cada pareja color / on-color (WCAG AA, mínimo 4,5:1):**
+
+| Pareja | Claro | Oscuro | ¿Cumple AA? |
+|---|---|---|---|
+| primary / onPrimary | 6,50:1 | 7,74:1 | Sí |
+| primaryContainer / onPrimaryContainer | 7,18:1 | 7,18:1 | Sí |
+| secondary / onSecondary | 6,49:1 | 7,71:1 | Sí |
+| tertiary / onTertiary | 6,45:1 | 7,76:1 | Sí |
+| surface / onSurface | 16,21:1 | 14,36:1 | Sí |
+| error / onError | 6,46:1 | 7,72:1 | Sí |
+
+Los ratios se calcularon con la fórmula de luminancia relativa de WCAG 2.1: (L1 + 0,05) / (L2 + 0,05), donde L1 es la luminancia del color más claro. Todas las parejas superan 4,5:1.
