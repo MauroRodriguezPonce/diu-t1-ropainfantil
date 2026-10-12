@@ -123,3 +123,8 @@ flowchart TD
 | error / onError | 6,46:1 | 7,72:1 | Sí |
 
 Los ratios se calcularon con la fórmula de luminancia relativa de WCAG 2.1: (L1 + 0,05) / (L2 + 0,05), donde L1 es la luminancia del color más claro. Todas las parejas superan 4,5:1.
+
+
+### Enlace a figma
+
+https://www.figma.com/design/I0J1wmsjwVOeF612HntKs4/T1-%C2%B7-Trotitos-%C2%B7-Mauro-Rodriguez-Ponce?node-id=73-524&t=Tl6IFzLJ9IxXmGCH-1
